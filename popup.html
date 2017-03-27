@@ -3,7 +3,6 @@
   <head>
     <title>CAMS-to-Calendar</title>
 	<script src="thirdParty/jquery-3.2.0.js"></script>
-	<script src="./newW.js"></script>
   </head>
   <style>
   @font-face {
@@ -34,11 +33,15 @@
       text-align: center;
       width: 250px;
       height: 350px;
+	  margin: 0px;
     }
 	#dateData {
 	display: none;
 	}
 	#scheduleData {
+	display: none;
+	}
+	#toNewWindow {
 	display: none;
 	}
   </style>
@@ -61,8 +64,286 @@
         <p id="arrayStr"></p>
       </div>
     </div>
-	<span id="toNewWindow"><!--HTML GOES HERE --></span>
-	<script src="./crawler.js">
-	</script>
+	<span id="toNewWindow">
+		<title>Schedule</title>
+		<style>
+		body {
+			background: turquoise;
+			color: white;
+			}
+		td {
+			margin: 10px;
+			}
+		</style>
+			<h1 align="center" id="dates"></h1>
+			<table id="scheduleTable">
+				<tr>
+				<th>Dept</th>
+				<th>Crs ID</th>
+				<th>Type</th>
+				<th>Section</th>
+				<th>Course Name</th>
+				<th>Instructor</th>
+				<th>Days</th>
+				<th>Room</th>
+				<th>Time</th>
+				<th>Date</th>
+				<th>Credits</th>
+				</tr>
+				
+				<tr>
+				<td class="dept">
+				</td>
+				<td class="crsid">
+				</td>
+				<td class="type">
+				</td>
+				<td class="section">
+				</td>
+				<td class="cname">
+				</td>
+				<td class="instruct">
+				</td>
+				<td class="days">
+				</td>
+				<td class="room">
+				</td>
+				<td class="time">
+				</td>
+				<td class="date">
+				</td>
+				<td class="credits">
+				</td>
+				</tr>
+				
+				<tr>
+				<td class="dept">
+				</td>
+				<td class="crsid">
+				</td>
+				<td class="type">
+				</td>
+				<td class="section">
+				</td>
+				<td class="cname">
+				</td>
+				<td class="instruct">
+				</td>
+				<td class="days">
+				</td>
+				<td class="room">
+				</td>
+				<td class="time">
+				</td>
+				<td class="date">
+				</td>
+				<td class="credits">
+				</td>
+				</tr>
+				
+				<tr>
+				<td class="dept">
+				</td>
+				<td class="crsid">
+				</td>
+				<td class="type">
+				</td>
+				<td class="section">
+				</td>
+				<td class="cname">
+				</td>
+				<td class="instruct">
+				</td>
+				<td class="days">
+				</td>
+				<td class="room">
+				</td>
+				<td class="time">
+				</td>
+				<td class="date">
+				</td>
+				<td class="credits">
+				</td>
+				</tr>
+				
+				<tr>
+				<td class="dept">
+				</td>
+				<td class="crsid">
+				</td>
+				<td class="type">
+				</td>
+				<td class="section">
+				</td>
+				<td class="cname">
+				</td>
+				<td class="instruct">
+				</td>
+				<td class="days">
+				</td>
+				<td class="room">
+				</td>
+				<td class="time">
+				</td>
+				<td class="date">
+				</td>
+				<td class="credits">
+				</td>
+				</tr>
+				
+				<tr>
+				<td class="dept">
+				</td>
+				<td class="crsid">
+				</td>
+				<td class="type">
+				</td>
+				<td class="section">
+				</td>
+				<td class="cname">
+				</td>
+				<td class="instruct">
+				</td>
+				<td class="days">
+				</td>
+				<td class="room">
+				</td>
+				<td class="time">
+				</td>
+				<td class="date">
+				</td>
+				<td class="credits">
+				</td>
+				</tr>
+				
+				<tr>
+				<td class="dept">
+				</td>
+				<td class="crsid">
+				</td>
+				<td class="type">
+				</td>
+				<td class="section">
+				</td>
+				<td class="cname">
+				</td>
+				<td class="instruct">
+				</td>
+				<td class="days">
+				</td>
+				<td class="room">
+				</td>
+				<td class="time">
+				</td>
+				<td class="date">
+				</td>
+				<td class="credits">
+				</td>
+				</tr>
+				
+				<tr>
+				<td class="dept">
+				</td>
+				<td class="crsid">
+				</td>
+				<td class="type">
+				</td>
+				<td class="section">
+				</td>
+				<td class="cname">
+				</td>
+				<td class="instruct">
+				</td>
+				<td class="days">
+				</td>
+				<td class="room">
+				</td>
+				<td class="time">
+				</td>
+				<td class="date">
+				</td>
+				<td class="credits">
+				</td>
+				</tr>
+				
+				<tr>
+				<td class="dept">
+				</td>
+				<td class="crsid">
+				</td>
+				<td class="type">
+				</td>
+				<td class="section">
+				</td>
+				<td class="cname">
+				</td>
+				<td class="instruct">
+				</td>
+				<td class="days">
+				</td>
+				<td class="room">
+				</td>
+				<td class="time">
+				</td>
+				<td class="date">
+				</td>
+				<td class="credits">
+				</td>
+				</tr>
+				
+				<tr>
+				<td class="dept">
+				</td>
+				<td class="crsid">
+				</td>
+				<td class="type">
+				</td>
+				<td class="section">
+				</td>
+				<td class="cname">
+				</td>
+				<td class="instruct">
+				</td>
+				<td class="days">
+				</td>
+				<td class="room">
+				</td>
+				<td class="time">
+				</td>
+				<td class="date">
+				</td>
+				<td class="credits">
+				</td>
+				</tr>
+				
+				<tr>
+				<td class="dept">
+				</td>
+				<td class="crsid">
+				</td>
+				<td class="type">
+				</td>
+				<td class="section">
+				</td>
+				<td class="cname">
+				</td>
+				<td class="instruct">
+				</td>
+				<td class="days">
+				</td>
+				<td class="room">
+				</td>
+				<td class="time">
+				</td>
+				<td class="date">
+				</td>
+				<td class="credits">
+				</td>
+				</tr>
+			</table>
+			</div>
+			
+		</span>
+	<script src="./crawler.js"></script>
   </body>
 </html>
